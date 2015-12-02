@@ -1,0 +1,18 @@
+﻿ @using damacana.Models
+@Model List<Damacana.Models.Product>
+
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+
+                   @foreach (Product p in Model)
+                   {
+                       <h2>
+                           @p.Name (@p.Id)
+                           @p.Price
+
+           </h2>
+
+                   }
